@@ -43,7 +43,7 @@ private:
 
 	static void _ShowFindCurrencyScreen()
 	{
-		cout << "\nFind Currency Screen Will Be Here.\n";
+		clsFindCurrencyScreen::ShowFindCurrencyScreen();
 	}
 
 	static void _ShowUpdateCurrencyRateScreen()
