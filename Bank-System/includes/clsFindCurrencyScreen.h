@@ -16,7 +16,6 @@ private:
         cout << "\n🆔 Code       : " << Currency.CurrencyCode();
         cout << "\n🔖 Name       : " << Currency.CurrencyName();
         cout << "\n💲 Rate(1$) = : " << Currency.Rate();
-
         cout << "\n_____________________________\n";
 
     }
