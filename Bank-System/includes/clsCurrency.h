@@ -2,9 +2,10 @@
 
 #include <iostream>
 #include <string>
-#include "clsString.h"
+#include <iomanip>
 #include <vector>
 #include <fstream>
+#include "clsString.h"
 class clsCurrency
 {
 private:
@@ -105,6 +106,7 @@ private:
 	}
 
 public:
+
 	clsCurrency(enMode Mode, string Country, string CurrencyCode, string CurrencyName, float Rate)
 	{
 		_Mode = Mode;

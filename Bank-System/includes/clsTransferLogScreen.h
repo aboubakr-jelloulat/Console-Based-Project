@@ -8,7 +8,6 @@
 
 class clsTransferLogScreen :protected clsScreen
 {
-
 private:
 
     static void PrintTransferLogRecordLine(clsBankClient::stTrnsferLogRecord TransferLogRecord)
@@ -50,7 +49,7 @@ public:
             cout << "\t\t\t\tNo Transfers Available In the System!";
         else
 
-            for (clsBankClient::stTrnsferLogRecord Record : vTransferLogRecord)
+            for (clsBankClient::stTrnsferLogRecord &Record : vTransferLogRecord)
             {
 
                 PrintTransferLogRecordLine(Record);
