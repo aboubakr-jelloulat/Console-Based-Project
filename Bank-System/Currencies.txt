@@ -134,7 +134,7 @@ Monaco#//#EUR#//#Euro#//#0.938000
 Mongolia#//#MNT#//#Mongolia Tugrik#//#3420.000000
 Montenegro#//#EUR#//#Euro#//#0.938000
 Montserrat#//#XCD#//#E.C. Dollar#//#2.700000
-Morocco#//#MAD#//#Morocco Dirham#//#10.479000
+Morocco#//#MAD#//#Morocco Dirham#//#10.000000
 Mozambique#//#MZN#//#Mozambique Metical#//#63.250000
 Myanmar#//#MMK#//#Myanmar Kyat#//#2100.000000
 Namibia#//#NAD#//#Namibia Dollar#//#17.351000

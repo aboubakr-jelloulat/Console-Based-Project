@@ -106,7 +106,6 @@ private:
 	}
 
 public:
-
 	clsCurrency(enMode Mode, string Country, string CurrencyCode, string CurrencyName, float Rate)
 	{
 		_Mode = Mode;
@@ -183,7 +182,7 @@ public:
 		Country = clsString::UpperAllString(Country);
 
 		fstream MyFile;
-		MyFile.open("Currencies.txt", ios::in); // read Mode
+		MyFile.open("Currencies.txt", ios::in);
 
 		if (MyFile.is_open())
 		{
@@ -203,7 +202,7 @@ public:
 
 		return _GetEmptyCurrencyObject();
 	}
-
+ 
 	static bool IsCurrencyExist(string CurrencyCode)
 	{
 		clsCurrency C1 = clsCurrency::FindByCode(CurrencyCode);
@@ -214,4 +213,21 @@ public:
 	{
 		return _LoadCurrencysDataFromFile();
 	}
+
+	float ConvertToUSD(float Amount)
+    {
+        return (float)(Amount / Rate());
+    }
+
+    float ConvertToOtherCurrency(float Amount, clsCurrency Currency2)
+    {
+        float AmountInUSD = ConvertToUSD(Amount);
+
+        if (Currency2.CurrencyCode() == "USD")
+        {
+            return AmountInUSD;
+        }
+
+        return (float)(AmountInUSD * Currency2.Rate());
+    }
 };
