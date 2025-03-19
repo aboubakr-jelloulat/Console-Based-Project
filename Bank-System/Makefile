@@ -3,7 +3,7 @@ RED 	= \033[1;31m
 BLUE 	= \033[1;34m
 RESET 	= \033[0m
 
-NAME 	= UI
+NAME 	= Bank
 
 CXX 	= c++
 CXXFLAGS = -std=c++11 -Wno-return-type -Wno-switch -fdeclspec
