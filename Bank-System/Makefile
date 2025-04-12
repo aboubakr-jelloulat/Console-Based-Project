@@ -6,7 +6,7 @@ RESET 	= \033[0m
 NAME 	= Bank
 
 CXX 	= c++
-CXXFLAGS = -std=c++11 -Wno-return-type -Wno-switch -fdeclspec
+CXXFLAGS = -std=c++11 -Wno-return-type -Wno-switch -fdeclspec # -Wno-return-type -Wno-switch -fdeclspec __declspec -> visual code Microsoft
 
 
 SRC_DIR = src
